@@ -16,7 +16,7 @@ public class App
 
     }
     
-    static boolean isPalindrome(String word)
+    public static boolean isPalindrome(String word)
     {
         char[] charArray = word.toCharArray();
         char[] reverseCharArray = new char[charArray.length];
@@ -34,7 +34,7 @@ public class App
         return reverseWord.toString().equals(word);
     }
 
-    static String getLongestPalindromeInSentence(String[] sentence)
+    public static String getLongestPalindromeInSentence(String[] sentence)
     {
         ArrayList<String> allPalindromes = getAllPalindromes(sentence);
         return getLongestPalindrome(allPalindromes);
